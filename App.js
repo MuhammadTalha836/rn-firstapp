@@ -1,12 +1,14 @@
 // import { View, Text } from 'react-native'
 import React from 'react'
-import FrontEnd from './src/screens/Frontend/FrontEnd';
+import { StatusBar } from 'react-native';
+import AppNavigator from './src/navigation/AppNavigator';
 
 export default function App() {
   return (
-   <>
-   <FrontEnd/>
-   </>
+    <>
+      <StatusBar barStyle={"light-content"} backgroundColor="#00b4d8" />
+      <AppNavigator />
+    </>
   )
 }
 
